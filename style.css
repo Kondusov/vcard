@@ -1,0 +1,29 @@
+.left_side-bar{ 
+    width: 20%; display: inline-block;
+    border: #333 1px solid;
+    text-align: center;
+}
+.main_block{
+    width: 75%; display: inline-block;
+}
+img{max-width: 100%;}
+.fio{
+    text-align: center;
+}
+.main-nav{
+
+}
+.main-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul:first-child{
+    border-top: #333 1px solid;
+}
+.main-nav ul li{
+    border-bottom: #333 1px solid;
+}
+.main-nav ul a{
+    text-decoration: none;
+}
