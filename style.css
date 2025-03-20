@@ -76,6 +76,18 @@ body{
     padding: 5px;
     background: linear-gradient(-45deg, #6e635f, #f4f1f2, #eff0f0, #788582);
 }
+.block_stack{
+    display: flex;
+    justify-content: space-between;
+}
+.block_stack p{
+    max-width: 30%;
+}
+.block_stack p img{
+    width: 100%;
+}
+
+
 footer{
     text-align: center;
     background-color: #e4e3e3;
