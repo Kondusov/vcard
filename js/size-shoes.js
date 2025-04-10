@@ -1,22 +1,26 @@
+console.log(document.querySelector("#qual-shoes").value);
+let arr = new Map([
+  [40, 3],
+  [41, 2],
+  [43, 1]
+]);
 let submitShoes = document.querySelector("#submit-shoes")
 let submit_form_shoes = document.querySelector("#submit_form_shoes")
-submit_form_shoes.addEventListener('submit', function(event) {event.preventDefault();set_size(arr, key = document.querySelector("#size-shoes"),
-  value = document.querySelector("#qual-shoes"), event)})
-let arr = new Map([
-    [40, 3],
-    [41, 2],
-    [43, 1]
-  ]);
+submit_form_shoes.addEventListener('submit', function(event) {event.preventDefault();
+  let key = document.querySelector("#size-shoes").value * 1;
+  let value = document.querySelector("#qual-shoes").value * 1;
+  set_size(arr, key, value, event)})
+
 console.log(arr)
 //key = 40
 //value = prompt('Введите приход или продажу') * 1// умножением привели к числу
 //value = 2
 
   
-  function set_size(arr,key, value, event){
+  function set_size(arr, key, value, event){
     
     event.preventDefault()
-      console.log(value)
+      console.log(arr.get(key))
       arr.get(key) + value < 0 ? //начался тернарный оператор
       alert('Остаток на складе ' + arr.get(key) +"\n Вы ввели недопустимое значение")
         : arr.set(key, arr.get(key) + value); //закончился тернарный оператор
