@@ -27,8 +27,6 @@ $shoes = "SELECT * FROM shoes";
                                     echo ('Нельзя отгрузить больше, чем есть на складе');
                                 }
                                 $sql = "UPDATE shoes SET qual = '$live_qual' WHERE id = '$bd_id'";
-                                // var_dump($sql);
-                                // die();
                             }
                             else{
                                 if($qual <= 0){
@@ -49,9 +47,6 @@ $shoes = "SELECT * FROM shoes";
                         }
                     }
                 }
-                // $sql = "INSERT INTO shoes (type, size, qual) VALUES ('$type', $size, $qual)";// переписать
-                // var_dump($sql);
-                //          die();
                 $affectedRowsNumber = $conn->exec($sql);
 // если добавлена как минимум одна строка
 if($affectedRowsNumber > 0 ){
